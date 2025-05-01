@@ -1,245 +1,250 @@
-import { Github } from "lucide-react";
+export const navItems = [
+  { name: "About", link: "#about" },
+  {
+    name: "Resume",
+    link: "https://drive.google.com/drive/folders/1wpl4WyZ-dsjRoiqk9ix3ntnQHXVVpAhG",
+  },
+  { name: "Projects", link: "#projects" },
 
-const data = {
-  home: {
-    name: "KRISH PRAJAPATI",
-    description:
-      "#Full__Stack Developer | Innovator | Problem Solver 🚀 Crafting Scalable Solutions with #MERN, #NextJS & #AI", // # -> for css style, _ -> create space, __ -> creates dash
-    cvLink: "asdf",
-  },
-  sidebar: {
-    links: [
-      {
-        name: "git hub",
-        link: "https://github.com/Krishprajapati15",
-        icon: Github,
-      },
-    ],
-  },
-  about: {
-    description:
-      "Hey there! I'm Krish Prajapati, a passionate Full-Stack Developer and Blockchain Enthusiast with expertise in MERN Stack, Next.js, and AI-powered solutions. I thrive on building scalable, efficient, and secure applications that solve real-world problems while delivering seamless user experiences. My work spans across web development, blockchain integration, AI-driven automation, and cybersecurity, ensuring that technology not only performs efficiently but also remains future-proof.",
-    image: "/imgs/krish.jpg",
-    numbers: [
-      { name: "PROJECTS-COMPLETED", number: 16 },
-      { name: "TOTAL-CONTRIBUTIONS", number: 210 },
-      { name: "CURRENT-YEAR-CONTRIBUTIONS", number: 120 },
-    ],
-  },
-  projects: {
-    description: "Projects that have recently been completed.",
-    projects: [
-      {
-        id: 1,
-        title: "Xenesis-2025",
-        description:
-          "I developed a digital system to streamline Xenesis 2025, our university's biggest tech fest. It features a User Panel for event registration, an Admin Panel and Volunteer Panel for control, and a Food Coupon Scanning System for Lunch. 🚀🎉",
-        image: "/projects-imgs/xenesis2025.png",
-        githubLink: "https://github.com/Sachani/xenesis2025",
-        previewLink: "https://xenesis.ldrp.ac.in/",
-        languages: ["PHP", "JAVASCRIPT", "MYSQL", "Anime.js", "GSAP", "jQuery"],
-      },
-      {
-        id: 2,
-        title: "WealthLens",
-        description:
-          "WealthLens is an artificial intelligence-based platform for easy tracking of income, expenses, and taxes. With SmartPaySync, an AI receipt scanner, and Credit Card Track AI, it makes financial management easier 💸",
-        image: "/projects-imgs/wealthlens.png",
-        githubLink: "https://github.com/Krishprajapati15/WealthLens",
-        previewLink: "https://github.com/Krishprajapati15/WealthLens",
-        languages: ["NextJS", "clerk", "Supabase", "TypeScript", "TailwindCSS"],
-      },
-      {
-        id: 3,
-        title: "HackWatch",
-        description:
-          "HackerWatch is an AI-driven cybersecurity solution designed for real-time threat detection and vulnerability prevention. It analyzes risks, strengthens security measures, and ensures proactive digital protection against evolving cyber threats. 🔒🚀",
-        image: "/projects-imgs/hackwatch.png",
-        githubLink: "https://github.com/Krishprajapati15/Hackwatch",
-        previewLink: "https://github.com/Krishprajapati15/Hackwatch",
-        languages: [
-          "React",
-          "NodeJS",
-          "OpenVAS",
-          "TensorFlow",
-          "Clerk",
-          "Python",
-        ],
-      },
-      {
-        id: 4,
-        title: "SecureShare",
-        description:
-          "SecureShare is a privacy-focused file-sharing platform that converts documents into unique, secure links. Users can upload files, generate a shareable link, and access them anytime without storing them locally. 🔒📂",
-        image: "/projects-imgs/file.png",
-        githubLink: "https://github.com/Krishprajapati15/FILE_SHARING",
-        previewLink: "https://github.com/Krishprajapati15/FILE_SHARING",
-        languages: ["React", "Nodejs", "MongoDB", "Expressjs", "Material UI"],
-      },
-      {
-        id: 5,
-        title: "Find My Mechanic",
-        description:
-          "Find My Mech is a clever mechanic reservation platform that allows users to discover and book local mechanics, Patrol Partner and Tow Partner with ease. With real-time location tracking and appointment booking, it allows for fast vehicle repair.",
-        image: "/projects-imgs/coming.jpg",
-        githubLink: "https://github.com/Krishprajapati15/Krishprajapati15",
-        previewLink: "https://github.com/Krishprajapati15/Krishprajapati15",
-        languages: [
-          "React",
-          "NodeJS",
-          "Expressjs",
-          "MongoDB",
-          "GSAP",
-          "ChakraUI",
-          "Firebase",
-        ],
-      },
-      {
-        id: 6,
-        title: "Travic",
-        description:
-          "Smart Traffic AI is an intelligent traffic management system 🚦🤖 that optimizes signal timings using AI and IoT sensors. It monitors real-time traffic flow, reduces congestion,  for better city traffic control. 🚗📍",
-        image: "/projects-imgs/travic.png",
-        githubLink: "https://github.com/Krishprajapati15/Travic",
-        previewLink: "https://github.com/Krishprajapati15/Travic",
-        languages: [
-          "React",
-          "NodeJS",
-          "TensorFlow",
-          "Firebase",
-          "GSAP",
-          "MongoDB",
-        ],
-      },
-    ],
-  },
-  technologies: {
-    skills: [
-      {
-        id: 1,
-        name: "html",
-        src: "/skills/html.svg",
-        link: "https://en.wikipedia.org/wiki/HTML",
-      },
-      {
-        id: 2,
-        name: "css",
-        src: "/skills/css.svg",
-        link: "https://en.wikipedia.org/wiki/CSS",
-      },
-      {
-        id: 3,
-        name: "javascript",
-        src: "/skills/javascript.svg",
-        link: "https://en.wikipedia.org/wiki/JavaScript",
-      },
-      {
-        id: 4,
-        name: "typescript",
-        src: "/skills/typescript.svg",
-        link: "https://en.wikipedia.org/wiki/TypeScript",
-      },
-      {
-        id: 5,
-        name: "react",
-        src: "/skills/react.svg",
-        link: "https://en.wikipedia.org/wiki/React_(JavaScript_library)",
-      },
-      {
-        id: 6,
-        name: "tailwind",
-        src: "/skills/tailwind.svg",
-        link: "https://en.wikipedia.org/wiki/Tailwind_CSS",
-      },
-      {
-        id: 7,
-        name: "nextJS",
-        src: "/skills/nextJS.svg",
-        link: "https://en.wikipedia.org/wiki/Next.js",
-      },
-      {
-        id: 8,
-        name: "postgresql",
-        src: "/skills/postgresql.svg",
-        link: "https://en.wikipedia.org/wiki/PostgreSQL",
-      },
-      {
-        id: 9,
-        name: "vitejs",
-        src: "/skills/vitejs.svg",
-        link: "https://en.wikipedia.org/wiki/Vite_(software)",
-      },
-      {
-        id: 10,
-        name: "git",
-        src: "/skills/git.svg",
-        link: "https://en.wikipedia.org/wiki/Git",
-      },
-      {
-        id: 11,
-        name: "docker",
-        src: "/skills/docker.svg",
-        link: "https://en.wikipedia.org/wiki/Docker_(software)",
-      },
-      {
-        id: 12,
-        name: "figma",
-        src: "/skills/figma.svg",
-        link: "https://en.wikipedia.org/wiki/Figma",
-      },
-      {
-        id: 13,
-        name: "firebase",
-        src: "/skills/firebase.svg",
-        link: "https://en.wikipedia.org/wiki/Firebase",
-      },
-      {
-        id: 14,
-        name: "AWS",
-        src: "/skills/aws.svg",
-        link: "https://en.wikipedia.org/wiki/aws",
-      },
-      {
-        id: 15,
-        name: "mongoDB",
-        src: "/skills/mongoDB.svg",
-        link: "https://en.wikipedia.org/wiki/MongoDB",
-      },
-      {
-        id: 16,
-        name: "Nodejs",
-        src: "/skills/node.svg",
-        link: "https://en.wikipedia.org/wiki/nodejs",
-      },
-      {
-        id: 17,
-        name: "expressjs",
-        src: "/skills/express.svg",
-        link: "https://en.wikipedia.org/wiki/expressjs",
-      },
-      {
-        id: 18,
-        name: "python",
-        src: "/skills/python.svg",
-        link: "https://en.wikipedia.org/wiki/python",
-      },
-      {
-        id: 19,
-        name: "supabase",
-        src: "/skills/supabase.svg",
-        link: "https://en.wikipedia.org/wiki/supabase",
-      },
-      {
-        id: 20,
-        name: "ether",
-        src: "/skills/ether.svg",
-        link: "https://en.wikipedia.org/wiki/ether",
-      },
-    ],
-  },
-  contact: {
-    email: "krish_22160@ldrp.ac.in",
-  },
-};
+  { name: "Contact", link: "#contact" },
+];
 
-export default data;
+export const gridItems = [
+  {
+    id: 1,
+    title:
+      "I deliver scalable and efficient solutions with a focus on user-centric design.",
+    description: "",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    imgClassName: "w-full h-full",
+    titleClassName: "justify-end",
+    img: "/b1.svg",
+    spareImg: "",
+  },
+  {
+    id: 2,
+    title: "Turning complex problems into elegant solutions.",
+    description: "",
+    className:
+      "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[40vh] select-none",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 3,
+    title: "Hire me",
+    description: "Are you hiring? Check out ",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 flex",
+    imgClassName: "",
+    titleClassName: "justify-end",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 4,
+    title: "Innovative developer crafting seamless digital experiences.",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "/grid.svg",
+    spareImg: "/b4.svg",
+  },
+
+  {
+    id: 5,
+    title: "Crafting Clean Code with Modern Design Principles",
+    description: "Passionate about transforming ideas into reality.",
+    className: "md:col-span-3 md:row-span-2",
+    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    titleClassName: "justify-center md:justify-start lg:justify-center",
+    img: "/b5.svg",
+    spareImg: "/grid.svg",
+  },
+  {
+    id: 6,
+    title: "Ready to bring your ideas to life?",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    img: "",
+    spareImg: "",
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Xenesis-2025",
+    des: "As a Team Lead for Xenesis 2025, my university's biggest tech fest, I contributed to its success. Check out the official website: [Xenesis 2025](https://www.xenesis2025.com).",
+    img: "/xenesis.png",
+    iconLists: ["/php.png", "/tail.svg", "/js.svg", "/gsap.svg", "/mysql.png"],
+    link: "https://xenesis.ldrp.ac.in/",
+  },
+  {
+    id: 2,
+    title: "WealthLens",
+    des: "AI-powered platform for tracking income, expenses, and taxes with features like SmartPaySync and Credit Card Track AI. 💸",
+    img: "/wealthlens.png",
+    iconLists: [
+      "/next.svg",
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/openai.png",
+      "/mongo.svg",
+    ],
+    link: "https://github.com/Krishprajapati15/WealthLens",
+  },
+  {
+    id: 3,
+    title: "HackWatch",
+    des: "HackerWatch: AI-powered cybersecurity for real-time threat detection and proactive digital protection. 🔒🚀",
+    img: "/hackwatch.png",
+    iconLists: [
+      "/re.svg",
+      "/css.svg",
+      "/js.svg",
+      "/chartjs.svg",
+      "/fm.svg",
+      "/mui.svg",
+      "/python.png",
+    ],
+    link: "https://github.com/Krishprajapati15/Hackwatch",
+  },
+
+  {
+    id: 4,
+    title: "zapconvert",
+    des: "ZapConvert: A versatile platform to convert music, files, images, and videos into various formats effortlessly. 🌟",
+    img: "/zapconvert.png",
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/mongo.svg"],
+    link: "https://www.zapconvert.me/",
+  },
+  {
+    id: 5,
+    title: "SecureShare",
+    des: "SecureShare: Privacy-first platform for sharing files via secure, unique links without local storage. 🔒📂",
+    img: "/file.png",
+    iconLists: ["/node.png", "/re.svg", "/tail.svg", "/js.svg", "/mongo.svg"],
+    link: "https://www.zapconvert.me/",
+  },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+  {
+    quote:
+      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+];
+
+export const companies = [
+  {
+    id: 1,
+    name: "cloudinary",
+    img: "/cloud.svg",
+    nameImg: "/cloudName.svg",
+  },
+  {
+    id: 2,
+    name: "appwrite",
+    img: "/app.svg",
+    nameImg: "/appName.svg",
+  },
+  {
+    id: 3,
+    name: "HOSTINGER",
+    img: "/host.svg",
+    nameImg: "/hostName.svg",
+  },
+  {
+    id: 4,
+    name: "stream",
+    img: "/s.svg",
+    nameImg: "/streamName.svg",
+  },
+  {
+    id: 5,
+    name: "docker.",
+    img: "/dock.svg",
+    nameImg: "/dockerName.svg",
+  },
+];
+
+export const workExperience = [
+  {
+    id: 1,
+    title: "ZapConvert",
+    desc: "Developed ZapConvert, a user-friendly web application for seamless file format conversions, supporting files, images, videos, music, and more in different formats. It features a clean white-themed interface and a custom animated navbar.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 2,
+    title: "Project Lead – Xenesis 2025",
+    desc: "Led the development of the official Xenesis 2025(LDRP College's Biggest Tech Fest) website, managing multiple panels including User, Admin, Volunteer, and Food Coupon Scanning systems, ensuring a seamless experience for over 5,000 participants.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Freelance Project",
+    desc: "Developed a web application for a client, handling both design and implementation using Mern Stack.",
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 4,
+    title: "Team Lead in Hackathon",
+    desc: "Led teams in multiple hackathons, including 5 finals and national-level events like SBI Hack-AI-Thon (Finalist) and SIH 2024 Grand Finale (Waitlist), with a focus on MERN stack projects.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/git.svg",
+    href: "https://github.com/krishprajapati15",
+  },
+  {
+    id: 2,
+    img: "/twit.svg",
+    href: "https://x.com/krishPr88603152?t=1Zjwv7rjWWgzITPBQe_KRg&s=08 ",
+  },
+  {
+    id: 3,
+    img: "/link.svg",
+    href: "https://www.linkedin.com/in/krish-prajapati-37417226a/",
+  },
+];
