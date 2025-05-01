@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // Ignores linting during builds, to prevent blocking
   },
-  output: "export",
+  output: "export", // For static site generation (SSG)
+  reactStrictMode: true, // Enables strict mode to catch potential issues during development
 };
 
 export default nextConfig;
