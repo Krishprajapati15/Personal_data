@@ -37,7 +37,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row flex-col justify-between items-center md:space-y-0 space-y-4">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2025 Krish Prajapati
         </p>
@@ -55,6 +55,14 @@ const Footer = () => {
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        @media (max-width: 768px) {
+          footer > .flex.mt-16 {
+            margin-top: 30px;
+          }
+        }
+      `}</style>
     </footer>
   );
 };
