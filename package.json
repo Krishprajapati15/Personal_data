@@ -1,5 +1,5 @@
 {
-  "name": "aj-portfolio",
+  "name": "kp-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -31,6 +31,7 @@
     "three-globe": "^2.31.1"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.10.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
